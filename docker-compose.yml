@@ -14,7 +14,6 @@ services:
     environment:
       POSTGRES_USER: postgres
       POSTGRES_PASSWORD: postgres
-      # POSTGRES_DB: order-service-db
     volumes:
       - ./docker-data/db:/var/lib/postgresql/data
       - ./init_db:/docker-entrypoint-initdb.d:ro
